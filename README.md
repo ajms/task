@@ -7,9 +7,11 @@ I have also used a few lines of code in R for fitting some linear models.
 Usage:
 The analysis_data.py uses the libraries sqlite, pandas, numpy and matplotlib.pyplot. The input data file data.csv should be in the same directory as the program. The program runs with Python 3 by e.g. entering
 python analysis_data.py in a terminal.
+The analysis_data.R uses the library DBI.
 
 Details and Output:
-The program loads the dataset data.csv into a sqlite3 database data.db, prints out the results of my analyses and generates six plots: isp_normalised.png, browser_normalised.png, isp_normalised2.png, browser_normalised2.png, isp_boxplots.png and browser_boxplots.png.
+The program analysis_data.py loads the dataset data.csv into a sqlite3 database data.db, prints out the results of my analyses and generates six plots: isp_normalised.png, browser_normalised.png, isp_normalised2.png, browser_normalised2.png, isp_boxplots.png and browser_boxplots.png.
+The program analysis_data.R loads the database data.db made by analysis_data.py and calculates some linear models.
 
 
 Approach to the exploration:
