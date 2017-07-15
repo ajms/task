@@ -11,11 +11,11 @@ plot(residuals(model1))
 
 # Model2 = p2p against browser and isp with dependence
 model2 = lm(p2pnorm ~ browser * isp, data = data3)
-summary(model16)
+summary(model2)
 
 # Model3 = p2p against browser and isp independent
 model3 = lm(p2pnorm ~ browser + isp, data = data3)
-summary(model17)
+summary(model2)
 
 # Comparison of model2 and model3
 anova(model2,model3)
