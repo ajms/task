@@ -1,7 +1,7 @@
 library(DBI)
 # data without connected = false
 con = dbConnect(RSQLite::SQLite(), dbname="data.db")
-data3 = dbGetQuery( con,'select * from data2 where connected == "true"' )
+data3 = dbGetQuery( con,'select * from data2 where connected=1' )
 head(data3)
 
 # Model1: Normalised cdn against p2p to check linear relation
